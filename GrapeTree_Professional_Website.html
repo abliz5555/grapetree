@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grape Tree, SZE</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333333;
+        }
+        header {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1a1a1a;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .hero {
+            text-align: center;
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+            color: white;
+            padding: 100px 20px;
+            border-radius: 8px;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product {
+            flex: 1 1 calc(33.333% - 20px);
+            background: #ffffff;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        /* Panda Animation */
+        .panda {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: panda-scroll 3s infinite;
+        }
+        @keyframes panda-scroll {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(20px); }
+        }
+        .testimonial, .team {
+            background-color: #ffffff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Grape Tree, SZE</h1>
+        <p>Custom Cakes & More | Sharjah Airport Free Zone</p>
+    </header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section class="hero">
+            <h2>Welcome to Grape Tree</h2>
+            <p>Creative Cakes for Every Occasion</p>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Located in the Sharjah Airport Free Zone, Grape Tree, SZE is dedicated to crafting premium cakes with unique designs. Our products are perfect for gifting and special events.</p>
+            <img src="https://via.placeholder.com/300x300" alt="Panda Mascot" class="panda">
+        </section>
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://via.placeholder.com/300x200" alt="Cut Out Cake">
+                    <h3>Cut Out Cake</h3>
+                    <p>Custom designs and precision cutting for the perfect gift.</p>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/300x200" alt="Golden Castella Cake">
+                    <h3>Golden Castella Cake</h3>
+                    <p>A luxurious twist on the classic Castella cake.</p>
+                </div>
+            </div>
+        </section>
+        <section class="testimonial">
+            <h2>What Our Customers Say</h2>
+            <p>"The most beautiful and delicious cakes I've ever had!"</p>
+        </section>
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <p>Our dedicated team works hard to bring your vision to life.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions? Reach out to us:</p>
+            <p>Email: <a href="mailto:info@grapetree.ae">info@grapetree.ae</a></p>
+            <p>Phone: +971-XXX-XXXX</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Grape Tree, SZE. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
